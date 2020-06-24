@@ -1,6 +1,6 @@
 var ground;
 var bob1,bob2,bob3,bob4,bob5;
-var rope;
+var rope1;
 var roof1;
 const Engine = Matter.Engine;
 const World = Matter.World;
@@ -28,7 +28,7 @@ function setup() {
 	 bob4 = new Bob (240,45,20)
 	 bob5 = new Bob (220,40,20)
 	                                 
-rope = new rope (bob1.body,bob2.body,bob3.body,bob4.body,bob5.body,roof.body,
+  rope1 = new Rope (bob1.body,bob2.body,bob3.body,bob4.body,bob5.body,roof.body,
 		-bob1Diameter*2,0,-bob2Diameter*2,0,-bob3Diameter*2,0,-bob4Diameter*2,0,
 		-bob5Diameter*2,0)
 
